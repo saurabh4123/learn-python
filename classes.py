@@ -18,7 +18,6 @@ h3=human()
 print(h1.lucky_number)
 print(h2.lucky_number)
 print(h3.lucky_number)
-
 #we can create new instance variables on the fly in python
 h1.name="Saurabh"
 h2.last_name="Mishra"
