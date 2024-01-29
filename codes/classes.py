@@ -39,4 +39,23 @@ d2=Dog("Jerry","German")
 
 print(f"Dog's name -> {d1.name} and breed -> {d1.breed}")
 print(f"Dog's name -> {d2.name} and breed -> {d2.breed}")
+
+#method is a function inside a class
+class veggie:
+    type="Vegetarian veggie"
+
+    def __init__(self,name):
+        print("I'm a vegetable..")
+        self.name=name
+        self.lucky_number=rd.randint(1,10)
+    #creating a function inside veggie class i.e method
+    def yell(self):  #self is referring to the instance that we are calling the method on,we can access the instance variables inside this function
+        print("yummy!!")
+        print(f"Vegetable type ->{self.type}") #we always use self referring to the current instance variable
+        print(f"Vegetable name ->{self.name}")
+        print(f"Lucky veggie number ->{self.lucky_number}")
+
+v1=veggie("Tomato")
+v1.yell()
+
         
