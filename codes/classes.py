@@ -48,14 +48,19 @@ class veggie:
         print("I'm a vegetable..")
         self.name=name
         self.lucky_number=rd.randint(1,10)
+        self.user="default"
     #creating a function inside veggie class i.e method
     def yell(self):  #self is referring to the instance that we are calling the method on,we can access the instance variables inside this function
         print("yummy!!")
         print(f"Vegetable type ->{self.type}") #we always use self referring to the current instance variable
         print(f"Vegetable name ->{self.name}")
         print(f"Lucky veggie number ->{self.lucky_number}")
+        print(f"Vegetable user ->{self.user}")
 
 v1=veggie("Tomato")
+v1.user="Human"#instance variable created on the go!!
 v1.yell()
+#we can give default values for the variable that are created on the go so that they are not error prone since we can use them without creating them on the go..
+#as we did on line 51
 
         
