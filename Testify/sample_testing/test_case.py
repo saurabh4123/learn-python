@@ -1,6 +1,6 @@
 # test_calculator.py
 
-from testify import TestCase, assert_equal, run
+from testify import TestCase, assert_equal, assert_raises, run
 
 # Import the Calculator class from calculator.py
 from calculator import Calculator
@@ -30,7 +30,7 @@ class CalculatorTestCase(TestCase):
     def test_division_by_zero(self):
         calc = Calculator()
         # Test that dividing by zero raises a ValueError
-        with self.assertRaises(ValueError):
+        with assert_raises(ValueError):
             calc.divide(10, 0)
 
 if __name__ == '__main__':
